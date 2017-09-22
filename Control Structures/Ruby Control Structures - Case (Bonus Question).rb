@@ -13,3 +13,14 @@ def identify_class(obj)
             print "It's an unknown model\n"
     end
 end
+
+# Shorter Solution
+def identify_class(obj)
+    # write your case control structure here
+    case obj
+        when Hacker,Submission,TestCase,Contest
+            print "It's a #{obj.class}!\n"
+        else
+            print "It's an unknown model\n"
+    end
+end
